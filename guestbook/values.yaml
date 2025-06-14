@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: docker.io/nginx
-  tag: stable-bookworm
+  tag: stable-perl
   pullPolicy: IfNotPresent
 
 service:
