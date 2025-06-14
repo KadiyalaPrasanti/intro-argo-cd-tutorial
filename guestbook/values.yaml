@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: docker.io/nginx
-  tag: stable-perl
+  repository: quay.io/akuity/argo-cd-learning-assets/guestbook
+  tag: 0.1.0
   pullPolicy: IfNotPresent
 
 service:
