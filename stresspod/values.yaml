@@ -1,6 +1,6 @@
 memoryDemo:
   resources:
     limits:
-      memory: 100Mi
+      memory: 1Mi
     requests:
-      memory: 100Mi
+      memory: 1Mi
