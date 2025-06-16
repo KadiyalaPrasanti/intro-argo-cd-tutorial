@@ -1,4 +1,4 @@
-helmMemoryDemo:
+memoryDemo:
   resources:
     limits:
       memory: 1Mi
