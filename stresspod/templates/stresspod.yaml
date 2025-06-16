@@ -5,12 +5,12 @@ metadata:
   namespace: helm-guestbook
 spec:
   containers:
-  - name: memory-demo
+  - name: helm-memory-demo
     image: nginx
     resources:
       limits:
-        memory: {{ .Values.memoryDemo.resources.limits.memory | default "100Mi" }}
+        memory: {{ .Values.helmMemoryDemo.resources.limits.memory | default "100Mi" }}
       requests:
-        memory: {{ .Values.memoryDemo.resources.requests.memory | default "100Mi" }}
+        memory: {{ .Values.helmMemoryDemo.resources.requests.memory | default "100Mi" }}
 
     
