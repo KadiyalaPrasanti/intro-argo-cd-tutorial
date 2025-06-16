@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memory-demo
+  namespace: helm-guestbook
+spec:
+  containers:
+  - name: memory-demo
+    image: nginx
+    resources:
+      limits:
+        memory: {{ .Values.memoryDemo.resources.limits.memory | default "100Mi" }}
+      requests:
+        memory: {{ .Values.memoryDemo.resources.requests.memory | default "100Mi" }}
+
+    
